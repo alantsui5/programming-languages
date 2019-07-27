@@ -2,11 +2,15 @@ package com.alan;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
+
 //https://dev.to/chrisvasqm/introduction-to-unit-testing-with-java-2544
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+        double tax = 0.02;
+        double cost=0;
         Map<String, Pizza> pizzas = new HashMap<>();
         pizzas.put("A",new Pizza("Pizza A",34.33));
         pizzas.put("B",new Pizza("Pizza B",12.88));
@@ -14,6 +18,35 @@ public class Main {
         System.out.println("get: " + pizzas.get("A").get_name());
         System.out.println("get: " + pizzas.get("B").get_name());
         System.out.println("get: " + pizzas.get("C").get_name());
+
+        Scanner input = new Scanner(System.in);
+        int choice = input.nextInt();
+        switch(choice){
+            case 1:
+                cost+= pizzas.get("A").get_price();
+                pizzas.get("A").order();
+            case 2:
+                cost += pizzas.get("B").get_price();
+                pizzas.get("B").order();
+            case 3:
+                cost += pizzas.get("C").get_price();
+                pizzas.get("C").order();
+            case 0:
+                System.out.println("Terminating...");
+            default:
+                System.out.println("You inserted wrong choice.");
+
+        }
+        cost = taxed_cost(cost,tax);
+        System.out.println(cost);
+        System.out.println(pizzas.get("A").get_cost());
+        System.out.println(pizzas.get("B").get_cost());
+        System.out.println(pizzas.get("C").get_cost());
+
+    }
+
+    private static double taxed_cost(double cost, double tax){
+        return tax * cost;
     }
 }
 
@@ -39,14 +72,15 @@ class Pizza {
         this.name = name;
     }
 
-    public void order(){
+    void order(){
         this.number += 1;
         this.cost+=price;
     }
-    public double get_cost(){
-        return cost;
+    double get_cost(){
+        return this.cost;
     }
     String get_name(){
         return this.name;
     }
+    double get_price(){ return this.price; }
 }

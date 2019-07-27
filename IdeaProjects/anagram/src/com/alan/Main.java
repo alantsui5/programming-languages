@@ -1,28 +1,31 @@
 package com.alan;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-	// write your code here
+        // write your code here
         anagram2();
     }
 
-    private static void anagram1(){
+    private static void anagram1() {
         System.out.println("Enter a string of test: ");
 
         Scanner input = new Scanner(System.in);
         String anagram = input.nextLine();
 
-        System.out.print("("+ reverse(anagram) +")");
+        System.out.print("(" + reverse(anagram) + ")");
     }
 
-    private static StringBuilder reverse(String str){
+    static String reverse(String str) {
         StringBuilder str_new = new StringBuilder();
         str_new = str_new.append(str).reverse();
-        return str_new;
+        return str_new.toString();
+
 
     }
 
@@ -34,9 +37,9 @@ public class Main {
 
         BufferedReader reader = new BufferedReader(new FileReader(file_name));
         String anagram = reader.readLine();
-        while(anagram !=null){
+        while (anagram != null) {
             System.out.println(anagram);
-            System.out.println("("+reverse(anagram)+")");
+            System.out.println("(" + reverse(anagram) + ")");
 
             anagram = reader.readLine();
         }
