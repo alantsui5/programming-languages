@@ -2,25 +2,25 @@
 
 _Applicable for Windows Powershell and macOS, Linux, Unix bash shell._
 
-### 1. Generate the ssh key(powershell, bash)
+1. Generate the ssh key(powershell, bash)
 ```bash
 ssh-keygen -t rsa -b 4096 -C "username@example"
 ```
 
-### 2. Confirm that you have generated the SSH key correctly
+2. Confirm that you have generated the SSH key correctly
 ```bash
 cat ~/.ssh/id_rsa.pub
 ```
 
-### 3. Go to these SSH pages in VCS service Website
+3. Go to these SSH pages in VCS service Website
 * For Github
     > https://github.com/settings/keys
 * For Gitlab
     > https://gitlab.com/profile/keys
 
-### 4. Paste the key generated (start from `ssh-rsa`) to __Key__ input block in both website
+4. Paste the key generated (start from `ssh-rsa`) to __Key__ input block in both website
 
-### 5. Run these git commands inside the working directory
+5. Run these git commands inside the working directory
 ```bash
 git init
 
@@ -35,4 +35,4 @@ git remote add origin "link of the repo"
 git push --set-upstream origin master
 ```
 
-### 6. You are done with git!!
+6. You are done with git!!
