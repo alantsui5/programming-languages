@@ -1,0 +1,57 @@
+body,html{
+    margin:0;
+    padding:0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    width:100%;
+    height:100%;
+}
+
+.section-top{
+    width: 100%;
+    height:100%;
+    overflow:hidden;
+    position:relative;
+    background-image:url(image1.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    animation:slide 15s infinite;
+}
+
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-transform:uppercase;
+    text-align:center;
+}
+
+.content h1{
+    color:white;
+    font-size:65px;
+    letter-spacing:13px;
+}
+
+.content a{
+    background:#51eaea;
+    padding:10px 20px;
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    border-radius:10px;
+    }
+
+p{
+    font-size:20px;
+    padding:10px;
+    font-family:sans-serif;
+}
+
+@keyframes slide{
+    0%{
+        background-image:url(image1.jpg);
+    }
+    50%{
+         background-image:url(image2.jpg);
+    }
+}
