@@ -2,15 +2,15 @@
 
 ## C 
 _Basic three Programs_
-| Projects      |     Status    |
-| ------------- |:-------------:|
-| Hello World   |finished &#x2611;|
-| Anagram       |[status](C/Anagram)|
-| Pizza Box     |finished &#x2611;|
+| Projects      |     Status    
+| ------------- |-------------
+| Hello World   |finished &#x2611;
+| Anagram       |[status](C/Anagram)
+| Pizza Box     |finished &#x2611;
 
 _Data Structures_
 | Projects      |     Status    |
-| ------------- |:-------------:|
+| ------------- |-------------|
 | Stack   |finished &#x2611;|
 | Queue      |finished &#x2611;|
 |   List   |finished &#x2611;|
@@ -19,7 +19,7 @@ _Data Structures_
 
 _Sorting_
 | Projects      |     Status    |
-| ------------- |:-------------:|
+| ------------- |-------------|
 | Bubble sort   |finished &#x2611;|
 | Gnome sort      |finished &#x2611;|
 |   Heap sort   |finished &#x2611;|
