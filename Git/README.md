@@ -41,5 +41,9 @@ git remote set-url origin --push --add user1@repo1
 git remote set-url origin --push --add user2@repo2
 git remote -v
 ```
-
-6. You are done with git!!
+6. Add embedded repo in father repo
+   ```sh
+   git add test2/ #For folder
+   git add test2 # For submodule
+   ```
+7. You are done with git!!
