@@ -2,6 +2,7 @@
 
 ## C 
 _Basic three Programs_
+
 | Projects      |     Status    
 | ------------- |-------------
 | Hello World   |finished &#x2611;
@@ -9,6 +10,7 @@ _Basic three Programs_
 | Pizza Box     |finished &#x2611;
 
 _Data Structures_
+
 | Projects      |     Status    |
 | ------------- |-------------|
 | Stack   |finished &#x2611;|
@@ -18,6 +20,7 @@ _Data Structures_
 |   Binary search tree   |finished &#x2611;|
 
 _Sorting_
+
 | Projects      |     Status    |
 | ------------- |-------------|
 | Bubble sort   |finished &#x2611;|
