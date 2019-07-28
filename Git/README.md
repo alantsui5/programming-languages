@@ -35,4 +35,11 @@ git remote add origin "link of the repo"
 git push --set-upstream origin master
 ```
 
+6. Add Multiple remote origin
+```sh
+git remote set-url origin --push --add user1@repo1
+git remote set-url origin --push --add user2@repo2
+git remote -v
+```
+
 6. You are done with git!!
