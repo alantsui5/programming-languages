@@ -1,0 +1,1 @@
+sudo pacman-mirrors Hong_Kong,China,South_Korea,Taiwan,Japan && pacman -Syyu
