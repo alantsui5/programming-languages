@@ -8,7 +8,7 @@ cd flutter/bin/
 ./flutter
 ```
 
-2. Locate Dart SDK
+2. Location of Dart SDK
 ```sh
 # The dart SDK is located inside
 flutter/bin/cache
