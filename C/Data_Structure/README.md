@@ -1,12 +1,17 @@
-# dataStructure_C
-> Data Structures written in C language
-## Day1 : Stack
-## Day2 : Queue
-## Day3 : Hash Table
-## Day4 : List
-## Day5 : Sorting on array
-* Selection Sort
-* Quick Sort
-* Merge Sort
-## Day 6 : Binary Search Tree
-## Day 7 : AVL Tree
+# Data Structures in C language
+This is the portal saving the data structures
+## The Data Structures Presented Here
+- [x] Stack
+- [x] Queue
+- [x] Hash table
+- [x] Lists 
+- [ ] Binary Search Tree
+- [ ] AVL Trees
+- [ ] Express Trees
+- [ ] Priority Queues
+- [ ] B-Tree
+- [ ] Splay Tree
+- [ ] Red Black Trees
+- [ ] Disjoint Sets
+- [ ] Graph
+
