@@ -31,3 +31,8 @@ _Sorting_
 |   Selection Sort   |finished &#x2611;|
 | Shaker Sort      |finished &#x2611;|
 |  Shell Sort   |finished &#x2611;|
+
+Useful Links:
+https://stevedonovan.github.io/rust-gentle-intro/1-basics.html
+https://www.jianshu.com/u/e8c3cb999dc5
+https://www.reddit.com/r/rust/comments/9pf2el/visual_studio_2017_and_rust_debugging/
