@@ -49,10 +49,11 @@ func main() {
 	check(err)
 	Pizzas["C"], err = newPizza("Pizza C", 34.11)
 	check(err)
-	var totalCost float32 = 0
+
+	var totalCost float32
 
 	for {
-		fmt.Println("\nBasket --------\n")
+		fmt.Print("\nBasket --------\n\n")
 
 		if Pizzas["A"].Number > 0 {
 			fmt.Printf("%s  %.2f\n", Pizzas["A"].Name, Pizzas["A"].getCost())
@@ -91,7 +92,7 @@ func main() {
 			Pizzas["C"].Number++
 			break
 		case 0:
-			fmt.Println("Terminating\n")
+			fmt.Print("Terminating\n\n")
 			os.Exit(0)
 			break
 		default:

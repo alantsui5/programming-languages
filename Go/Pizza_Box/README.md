@@ -19,3 +19,8 @@
    ```go
     Pizzas := make(map[string]*Pizza)
    ```
+5. Creating Objects
+   ```go
+   e := new(ClassName)
+   e := &ClassName{}
+   ```
