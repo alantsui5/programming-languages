@@ -10,25 +10,28 @@ import (
 
 func main() {
 	Anagram2()
-
 }
-func Anagram2() {
-	var str string = "Hello World"
-	fmt.Println("(" + reversed(str) + ")")
-}
-func Anagram1() {
-	fmt.Println("Please input text of string:")
-	reader := bufio.NewReader(os.Stdin)
 
-	result, err := reader.ReadString('\n')
-	if err != nil {
-		fmt.Println("read error:", err)
+// Modulise
+
+func check(e error) {
+	if e != nil {
+		panic(e)
 	}
-	fmt.Println(result)
-	fmt.Println("(" + reversed(result) + ")")
 }
+
+func prompt(text string, path ...string) string {
+	if text == "text" {
+		fmt.Println("Please input text of string:")
+	}
+	reader := bufio.NewReader(os.Stdin)
+	string1, err := reader.ReadString('\n')
+	check(err)
+	string1 = strings.TrimSpace(string1)
+	return string1
+}
+
 func reversed(s string) string {
-	s = strings.TrimSpace(s)
 	o := make([]rune, utf8.RuneCountInString(s))
 	i := len(o)
 	for _, c := range s {
@@ -36,4 +39,29 @@ func reversed(s string) string {
 		o[i] = c
 	}
 	return string(o)
+}
+
+func Anagram1() {
+	result := prompt("text")
+	fmt.Println(result)
+	fmt.Println("(" + reversed(result) + ")")
+}
+
+func Anagram2() {
+	fileName := prompt("text")
+	fmt.Println(fileName)
+	file, err := os.Open(fileName)
+	defer file.Close()
+	check(err)
+	data := bufio.NewReader(file)
+	var line string
+	for {
+		line, err = data.ReadString('\n')
+		line = strings.TrimSpace(line)
+		fmt.Println(line)
+		fmt.Println("(" + reversed(line) + ")")
+		if err != nil {
+			break
+		}
+	}
 }

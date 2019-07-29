@@ -6,20 +6,31 @@ const reverse_string = (str)=>{
     return [...str].reverse().join("")
 }
 
-const string_scanner = ()=>{
+const Scanner = (quest)=> new Promise((resolve,reject)=>{
     const rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout
-      });
-    rl.question('Enter name of a file you wish to see: ', (file_name) => {
+      })
+    rl.question(quest, (file_name) => {
         resolve(file_name)
         rl.close()
-    });
-}
-/*
-rl.question('Enter name of a file you wish to see: ', (file_name) => {
-// TODO: Log the answer in a database
-    
+    })
+})
+
+const read_file = (path) => new Promise((resolve,reject) => {
+  fs.open(path,'r',(err,fd) => {
+    if (err) throw err
+    else resolve(fd)
+  })
+})
+
+const close_file = (file) => new Promise((resolve,reject) => {
+  fs.close(file,(err) => {
+    if (err) throw err;
+    else reject(file)
+  })
+})
+/*  
     fs.open(file_name, 'r', (err, fd) => {
         if (err) throw err;
         console.log(file_name);
@@ -33,6 +44,8 @@ rl.question('Enter name of a file you wish to see: ', (file_name) => {
 });
 */
 const main = async () =>{
-    const file_name = await string_scanner();
+    const file_name = await Scanner('Enter name of a file you wish to see:\n');
     console.log(file_name)
 }
+
+main()
