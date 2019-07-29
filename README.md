@@ -1,4 +1,4 @@
-# Current Project and languages learned
+# Current Project and languages learning
 
 ## C 
 _Basic three Programs_
