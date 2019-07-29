@@ -41,9 +41,17 @@ git remote set-url origin --push --add user1@repo1
 git remote set-url origin --push --add user2@repo2
 git remote -v
 ```
-6. Add embedded repo in father repo
+7. Add embedded repo in father repo
    ```sh
    git add test2/ #For folder
    git add test2 # For submodule
    ```
-7. You are done with git!!
+8. Check Files which are unstaged
+   ```sh
+   git diff
+   ```
+9. Get changed from Github/Gitlab
+    ```sh
+    git pull
+    ```
+10. You are done with git!!
