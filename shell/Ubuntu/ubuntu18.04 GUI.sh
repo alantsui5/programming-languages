@@ -74,3 +74,5 @@ sudo apt-get install google-chrome-stable
 #Install Rust
 curl https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
+echo $(cat ~/.profile | tail -1) >> ~/.bashrc
+source ~/.bashrc
