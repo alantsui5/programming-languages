@@ -15,19 +15,19 @@ func check(e error) {
 	}
 }
 
-type Pizza struct {
+type pizza struct {
 	Name   string
 	Price  float32
 	Number int
 	Cost   float32
 }
 
-func newPizza(name string, price float32) (*Pizza, error) {
+func newPizza(name string, price float32) (*pizza, error) {
 	if name == "" {
 		return nil, errors.New("missing name")
 	}
 
-	return &Pizza{
+	return &pizza{
 		Name:   name,
 		Price:  price,
 		Number: 0,
@@ -35,19 +35,19 @@ func newPizza(name string, price float32) (*Pizza, error) {
 	}, nil
 }
 
-func (p *Pizza) getCost() float32 {
+func (p *pizza) getCost() float32 {
 	p.Cost = float32(p.Number) * p.Price
 	return p.Cost
 }
 
 func main() {
-	Pizzas := make(map[string]*Pizza)
+	Pizzas := make(map[string]*pizza)
 	var err error
-	Pizzas["A"], err = newPizza("Pizza A", 123.11)
+	Pizzas["A"], err = newPizza("pizza A", 123.11)
 	check(err)
-	Pizzas["B"], err = newPizza("Pizza B", 185.11)
+	Pizzas["B"], err = newPizza("pizza B", 185.11)
 	check(err)
-	Pizzas["C"], err = newPizza("Pizza C", 34.11)
+	Pizzas["C"], err = newPizza("pizza C", 34.11)
 	check(err)
 
 	var totalCost float32
