@@ -48,7 +48,7 @@ git remote -v
    ```
 8. Check Files which are unstaged
    ```sh
-   git diff
+   git status
    ```
 9. Get changed from Github/Gitlab
     ```sh
