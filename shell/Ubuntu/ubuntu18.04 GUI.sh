@@ -4,11 +4,12 @@ sudo apt upgrade
 sudo apt install curl wget python python3-pip ffmpeg axel
 
 # Server application
-sudo apt install postgresql postgresql-contrib docker.io
+sudo apt install postgresql postgresql-contrib docker.io sqlite nodejs 
 
 # Install youtube-dl
 sudo pip3 install --upgrade pip
 sudo pip3 install --upgrade youtube_dl
+sudo pip3 install pillow scipy scikit-image requests pylint opencv-python
 
 # Install Via apt(GUI)
 sudo apt update
@@ -35,7 +36,7 @@ sudo apt install ubuntu-communitheme-session
 #Install GUI apps
 snap install visual-studio-code evolution
 snap install typora
-
+snap install  gnome-mpv gimp blender
 
 
 # Brew
@@ -63,3 +64,13 @@ sudo ln -s ~/Documents/Github/Project/v/v /usr/local/bin/v
 sudo apt update
 sudo apt upgrade
 sudo apt install sudo apt install libglfw3 libglfw3-dev libfreetype6-dev libcurl3-dev 
+
+#install chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo apt-get update 
+sudo apt-get install google-chrome-stable
+
+#Install Rust
+curl https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
