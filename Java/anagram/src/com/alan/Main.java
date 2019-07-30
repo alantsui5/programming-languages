@@ -22,9 +22,9 @@ public class Main {
     }
 
     static String reverse(String str) {
-        StringBuilder str_new = new StringBuilder();
-        str_new = str_new.append(str).reverse();
-        return str_new.toString();
+        StringBuilder strNew = new StringBuilder();
+        strNew = strNew.append(str).reverse();
+        return strNew.toString();
 
 
     }
@@ -33,9 +33,9 @@ public class Main {
         System.out.print("Enter the name of file: ");
 
         Scanner input = new Scanner(System.in);
-        String file_name = input.nextLine();
+        String fileName = input.nextLine();
 
-        BufferedReader reader = new BufferedReader(new FileReader(file_name));
+        BufferedReader reader = new BufferedReader(new FileReader(fileName));
         String anagram = reader.readLine();
         while (anagram != null) {
             System.out.println(anagram);

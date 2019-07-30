@@ -20,15 +20,15 @@ public class Main {
         int choice = input.nextInt();
         switch(choice){
             case 1:
-                cost+= pizzas.get("A").get_price();
+                cost+= pizzas.get("A").getPrice();
                 pizzas.get("A").order();
                 break;
             case 2:
-                cost += pizzas.get("B").get_price();
+                cost += pizzas.get("B").getPrice();
                 pizzas.get("B").order();
                 break;
             case 3:
-                cost += pizzas.get("C").get_price();
+                cost += pizzas.get("C").getPrice();
                 pizzas.get("C").order();
                 break;
             case 0:
@@ -40,9 +40,9 @@ public class Main {
         }
         cost = taxed_cost(cost,tax);
         System.out.println(cost);
-        System.out.println(pizzas.get("A").get_cost());
-        System.out.println(pizzas.get("B").get_cost());
-        System.out.println(pizzas.get("C").get_cost());
+        System.out.println(pizzas.get("A").getCost());
+        System.out.println(pizzas.get("B").getCost());
+        System.out.println(pizzas.get("C").getCost());
 
     }
 
@@ -62,14 +62,14 @@ class Pizza {
         this.name = name;
     }
 
-    public void edit_pizza(String name, double price){
+    public void editPizza(String name, double price){
         this.name = name;
         this.price = price;
     }
-    public void edit_pizza(double price){
+    public void editPizza(double price){
         this.price = price;
     }
-    public void edit_pizza(String name){
+    public void editPizza(String name){
         this.name = name;
     }
 
@@ -77,11 +77,11 @@ class Pizza {
         this.number += 1;
         this.cost+=price;
     }
-    double get_cost(){
+    double getCost(){
         return this.cost;
     }
-    String get_name(){
+    String getName(){
         return this.name;
     }
-    double get_price(){ return this.price; }
+    double getPrice(){ return this.price; }
 }

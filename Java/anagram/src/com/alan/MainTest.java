@@ -11,12 +11,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class MainTest {
 
     @Test
-    void reverse_test() {
+    void reverseTest() {
         Assert.assertEquals("ahah", reverse("haha"));
     }
 
     @Test
-    void test_reverse_special() {
+    void testReverseSpecial() {
         Assert.assertEquals("$^*G$F%^H", reverse("H^%F$G*^$"));
     }
 
