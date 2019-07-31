@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	Anagram2()
+	anagram2()
 }
 
 // Modulise
@@ -41,13 +41,13 @@ func reversed(s string) string {
 	return string(o)
 }
 
-func Anagram1() {
+func anagram1() {
 	result := prompt("text")
 	fmt.Println(result)
 	fmt.Println("(" + reversed(result) + ")")
 }
 
-func Anagram2() {
+func anagram2() {
 	fileName := prompt("text")
 	fmt.Println(fileName)
 	file, err := os.Open(fileName)

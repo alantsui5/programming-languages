@@ -1,3 +1,41 @@
+1. When returning object
+   ```go
+   return &Object
+   return &Object{/*Content*/}
+   ```
+2. Calling Object from function
+   ```go
+   //Write to object
+   func (ob *Object)callObject() string{
+       /* Content */
+   }
+    //Read only
+    func (ob Object)callObject(param string){
+       /* Content */
+   }
+   ```
+3. Point the specific object to new variable
+    ```go
+    r = Object{/*Content*/}
+    
+    rAlias = &r
+    ```
+4. Initialize Maps
+   ```go
+    Pizzas := make(map[string]*Pizza)
+   ```
+5. Creating Objects
+   ```go
+   e := new(ClassName)
+   e := &ClassName{}
+   ```
+6. Creating new projects in go
+   ```sh
+   #inside project dir
+   go mod init <projectName>
+    # import local packages
+    import "<projectName>/<packageName>"
+    ```
 Credit:
 https://medium.com/@john.lin/golang-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-582cad359738
 https://gobyexample.com/
