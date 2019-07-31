@@ -10,16 +10,22 @@
     ```
  3. Docker Build
     ```shell script
-    sudo docker build -t server/app .
+    docker build -t server/app .
     ```
  4. Docker run server
     ```shell script
-    sudo docker run -d -p 4040:4040 server/app
+    docker run -d -p 4040:4040 server/app
     # Test if mappworksorks
-    sudo docker run --net host -p 4040:4040 server/app
+    docker run --net host -p 4040:4040 server/app
     ```
  5. Check Server Port in Ubuntu
     ```shell script
     sudo lsof -t -i:4040
     sudo kill "The PID"
     ``` 
+6. Docker Group
+    ```shell script
+    sudo groupadd docker
+    sudo usermod -aG docker $USER
+    newgrp docker
+    ```
