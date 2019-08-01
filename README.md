@@ -1,5 +1,6 @@
 # Current Project and languages learning
 
+_This repo is inspired by [Want to learn any programming language? — Write These 3 Simple Apps!](https://medium.com/@samuel.fare/want-to-learn-any-programming-language-write-these-3-simple-apps-5af8cd119921)_
 ## C 
 _Basic three Programs_
 
@@ -36,3 +37,5 @@ Useful Links: <br />
 https://stevedonovan.github.io/rust-gentle-intro/1-basics.html <br />
 https://www.jianshu.com/u/e8c3cb999dc5 <br />
 https://www.reddit.com/r/rust/comments/9pf2el/visual_studio_2017_and_rust_debugging/ <br />
+
+https://medium.com/@samuel.fare/what-making-a-cup-of-tea-taught-me-about-functional-programming-a09909679924 <br>
