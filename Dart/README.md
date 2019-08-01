@@ -14,6 +14,12 @@ cd flutter/bin/
 flutter/bin/cache
 ```
 
+3. Export dart path
+```sh
+echo 'export PATH="~/Documents/app/flutter/bin/cache/dart-sdk/bin:$PATH"' >> ~/.profile
+echo 'export PATH="~/Documents/app/flutter/bin/cache/dart-sdk/bin:$PATH"' >> ~/.bashrc
+```
+
 3. Create Dart Project template
    ```sh
     pub global activate stagehead
