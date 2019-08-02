@@ -1,5 +1,3 @@
-
-
 # LEPP (linux nginx postgresql php) configuration for Ubuntu
 _These setups below is applicable to Ubuntu 18.04 LTS desktop_
 
