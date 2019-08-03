@@ -53,3 +53,4 @@ https://www.youtube.com/channel/UC_BzFbxG2za3bp5NRRRXJSw/videos
 https://www.youtube.com/channel/UC2GHqYE3fVJMncbrRd8AqcA/videos
 https://www.youtube.com/channel/UCsf0cZc4jnvE5-CjEhWN8pg/videos
 https://www.youtube.com/user/gocoding/videos
+http://www.golangbootcamp.com/book/get_your_feet_wet
