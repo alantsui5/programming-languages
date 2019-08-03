@@ -17,3 +17,11 @@
 	#Std lib location
 	Download via rustup
 	```
+
+5. Create new projects
+   ```sh
+   cargo +nightly new helloWorld
+   ```
+
+6. Gentle intro to rust
+   * https://stevedonovan.github.io/rust-gentle-intro/1-basics.html
