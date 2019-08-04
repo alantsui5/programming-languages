@@ -63,4 +63,7 @@ git remote set-url origin --push --delete git@repo_new git@repo_old
     ```sh
     git pull
     ```
-10. You are done with git!!
+
+10. Git Flow Chart
+![git-model](git-model.png)
+11. You are done with git!!
