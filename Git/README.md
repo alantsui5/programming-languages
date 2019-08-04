@@ -35,11 +35,20 @@ git remote add origin "link of the repo"
 git push --set-upstream origin master
 ```
 
-6. Add Multiple remote origin
+6. Manipulate remote origin URLS
 ```sh
 git remote set-url origin --push --add user1@repo1
 git remote set-url origin --push --add user2@repo2
 git remote -v
+
+# Change fetch URL
+git remote set-url origin git@repo3
+
+# Delete push URL
+git remote set-url origin --push --delete git@repo4
+
+# Change URL
+git remote set-url origin --push --delete git@repo_new git@repo_old
 ```
 7. Add embedded repo in father repo
    ```sh
