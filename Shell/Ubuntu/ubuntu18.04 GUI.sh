@@ -1,8 +1,3 @@
-#Install VIA apt(CMD)LINE
-sudo apt update
-sudo apt upgrade
-sudo apt install curl wget python python3-pip ffmpeg axel
-
 # Server application
 sudo apt install postgresql postgresql-contrib docker.io sqlite nodejs 
 

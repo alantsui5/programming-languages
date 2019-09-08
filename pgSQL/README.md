@@ -5,4 +5,6 @@
 2. Super User
   * `mydb=#` means super user
   * `mydb=>` means normal user
-3. 
+
+http://www.postgresqltutorial.com/postgresql-cheat-sheet/
+http://www.postgresqltutorial.com/postgresql-sample-database/

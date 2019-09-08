@@ -1,1 +1,0 @@
-This polymorphism snippet is referenced from [Java](../../Java/Polymorphism)
